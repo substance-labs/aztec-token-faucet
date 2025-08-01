@@ -67,6 +67,7 @@ async function requestTokens(
 
   return {
     transactionHash: receipt?.txHash,
+    senderAddress: wallet.getAddress().toString()
   }
 }
 
