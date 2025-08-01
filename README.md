@@ -59,6 +59,7 @@ Response:
 
 ```json
 {
-  "transactionHash": "0x..."
+  "transactionHash": "0x...",
+  "senderAddress": "0x..."
 }
 ```
