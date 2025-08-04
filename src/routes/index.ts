@@ -2,8 +2,8 @@ import { AztecAddress, SponsoredFeePaymentMethod } from "@aztec/aztec.js"
 import { TokenContract, TokenContractArtifact } from "@aztec/noir-contracts.js/Token"
 import { BigNumber } from "bignumber.js"
 
-import settings from "../settings/index.ts"
-import { getNode, getPxe, getSponsoredFPCAddress, getWalletFromSecretKey } from "../utils/aztec.ts"
+import settings from "../settings/index.js"
+import { getNode, getPxe, getSponsoredFPCAddress, getWalletFromSecretKey } from "../utils/aztec.js"
 
 import type { FastifyInstance, FastifyReply, FastifyRequest } from "fastify"
 
@@ -67,7 +67,7 @@ async function requestTokens(
 
   return {
     transactionHash: receipt?.txHash,
-    senderAddress: wallet.getAddress().toString()
+    senderAddress: wallet.getAddress().toString(),
   }
 }
 
