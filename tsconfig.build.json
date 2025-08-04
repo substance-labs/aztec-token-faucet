@@ -1,19 +1,12 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-      "allowImportingTsExtensions": false,
-      "module": "nodenext",
-      "moduleResolution": "nodenext",
-      "noEmit": false,
-      "noFallthroughCasesInSwitch": true,
-      "noPropertyAccessFromIndexSignature": false,
-      "noUncheckedIndexedAccess": true,
-      "noUnusedLocals": false,
-      "noUnusedParameters": false,
-      "outDir": "dist",
-      "rootDir": "src",
-      "skipLibCheck": true,
-      "strict": true
+    "noEmit": false,
+    "outDir": "dist",
+    "rootDir": "src",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "allowImportingTsExtensions": false
   },
   "include": ["src"]
 }
